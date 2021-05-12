@@ -50,9 +50,7 @@ objective.
 # Syntax of the Lambda Expression
 Lambda Expression:
 ( ) -> { }
-Lambda Arrow Lambda Body
-Input
-Parameters
+
 
 # Usages of Lambda
 • Lambda is mainly used to implement Functional Interfaces(SAM).
