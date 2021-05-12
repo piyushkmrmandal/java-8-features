@@ -46,3 +46,13 @@ objective.
 • Return Type
 • Lambdas are not tied to any class like a regular method.
 • Lambda can also be assigned to variable and passed around.
+
+# Syntax of the Lambda Expression
+Lambda Expression:
+( ) -> { }
+Lambda Arrow Lambda Body
+Input
+Parameters
+
+# Usages of Lambda
+• Lambda is mainly used to implement Functional Interfaces(SAM).
