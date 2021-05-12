@@ -54,3 +54,10 @@ Lambda Expression:
 
 # Usages of Lambda
 • Lambda is mainly used to implement Functional Interfaces(SAM).
+
+# Lambda in Practice ( Things to keep in
+Mind)
+( ) -> Single Statement or Expression; // curly braces are not
+needed.
+( )-> { <Multiple Statements> }; // curly braces are needed for
+multiple //statements
