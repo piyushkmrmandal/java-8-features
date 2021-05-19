@@ -2,12 +2,18 @@ package core.java8.data;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Supplier;
 
 public class StudentDataBase {
 
     public static Supplier<Student> studentSupplier = () -> {
-        return new Student("Piyush",2,3.6, "male",Arrays.asList("swimming", "basketball","volleyball"), 4);
+        Bike bike = new Bike();
+        bike.setName("Thunderbird");
+        bike.setModel("Bullet");
+        Student student = new Student("Piyush",2,3.6, "male",Arrays.asList("swimming", "basketball","volleyball"), 4);
+        student.setBike(Optional.ofNullable(bike));
+        return student;
     };
 
     /**

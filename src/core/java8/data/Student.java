@@ -2,6 +2,7 @@ package core.java8.data;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class Student {
     private String name;
@@ -10,6 +11,7 @@ public class Student {
     private String gender;
     List<String> activities = new ArrayList<>();
     private int notebooks;
+    private Optional<Bike> bike = Optional.empty();
 
 
     public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities, int notebooks) {
@@ -83,6 +85,14 @@ public class Student {
         this.notebooks = notebooks;
     }
 
+    public Optional<Bike> getBike() {
+        return bike;
+    }
+
+    public void setBike(Optional<Bike> bike) {
+        this.bike = bike;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -92,6 +102,8 @@ public class Student {
                 ", gender='" + gender + '\'' +
                 ", activities=" + activities +
                 ", notebooks=" + notebooks +
+                ", bike=" + bike +
                 '}';
     }
+
 }
